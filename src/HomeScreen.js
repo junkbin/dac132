@@ -2,20 +2,12 @@ import React from "react";
 import { View, Text } from "react-native";
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
-class HomeScreen extends React.Component {
+export class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>Home Screen</Text>
+      <View style={{ backgroundColor:'royalblue', flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text style={{fontSize:60, color:'ghostwhite', fontFamily:'cursive'}}>Hello Home</Text>
       </View>
     );
   }
 }
-
-const AppNavigator = createStackNavigator({
-    Home: {
-      screen: HomeScreen
-    }
-  });
-  
-export default createAppContainer(AppNavigator);
