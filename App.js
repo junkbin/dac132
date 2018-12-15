@@ -9,7 +9,7 @@ const AppNavigator = createStackNavigator(
     Home: HomeScreen,
     Details: DetailScreen
   }, {
-    initialRouteName: "Details"
+    initialRouteName: "Home"
   }
 );
 
